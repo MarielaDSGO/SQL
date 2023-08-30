@@ -1,0 +1,32 @@
+--Create a book store database
+
+CREATE TABLE books (id INTEGER PRIMARY KEY,name TEXT,quantity INTEGER, price INTEGER, rating INTEGER);
+
+INSERT INTO books VALUES
+(1,"It Ends With Us",50,24,1);
+INSERT INTO books VALUES
+(2,"It Starts With Us",55,22,3);
+INSERT INTO books VALUES
+(3,"Verity",80,25,2);
+INSERT INTO books VALUES
+(4,"Ugly Love",35,21,4);
+INSERT INTO books VALUES
+(5,"Reminders of Him",25,17,5);
+INSERT INTO books VALUES
+(6,"Layla",28,16,6);
+INSERT INTO books VALUES
+(7,"All your perfects",10,13,5);
+INSERT INTO books VALUES
+(8,"Hopeless",12,14,5);
+INSERT INTO books VALUES
+(9,"Never Never",5,12,5);
+SELECT * FROM books;
+
+--display database ordered by price
+SELECT * FROM books
+ORDER BY price desc;
+
+--what is the avg rating of the books
+SELECT avg(rating)"avg rating"
+FROM books;
+
